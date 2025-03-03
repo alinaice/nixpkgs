@@ -10964,6 +10964,8 @@ self: super: with self; {
 
   pyskyqremote = callPackage ../development/python-modules/pyskyqremote { };
 
+  pysmhi = callPackage ../development/python-modules/pysmhi { };
+
   pysolcast = callPackage ../development/python-modules/pysolcast { };
 
   pystac = callPackage ../development/python-modules/pystac { };
