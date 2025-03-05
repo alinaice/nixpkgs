@@ -13,11 +13,12 @@
   pytestCheckHook,
   pythonOlder,
   syrupy,
+  yarl,
 }:
 
 buildPythonPackage rec {
   pname = "pysmartthings";
-  version = "2.4.1";
+  version = "2.5.0";
   pyproject = true;
 
   disabled = pythonOlder "3.12";
@@ -26,7 +27,7 @@ buildPythonPackage rec {
     owner = "andrewsayre";
     repo = "pysmartthings";
     rev = "v${version}";
-    hash = "sha256-lCPPsy89xpRSN/ajyU7ywDc56Sp4B57cXyVa/Lpzl3k=";
+    hash = "sha256-0D0si3VBGtnQ8+kUKiquPo/IJXeBgR7SFc/1nxhiPvw=";
   };
 
   build-system = [ poetry-core ];
@@ -36,6 +37,7 @@ buildPythonPackage rec {
     aiosseclient
     mashumaro
     orjson
+    yarl
   ];
 
   nativeCheckInputs = [
