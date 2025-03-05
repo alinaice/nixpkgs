@@ -13,14 +13,14 @@
 
 buildPythonPackage rec {
   pname = "weheat";
-  version = "2025.2.22";
+  version = "2025.2.27";
   pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wefabricate";
     repo = "wh-python";
     tag = version;
-    hash = "sha256-PhI3aTxkL7UjhjkMB6bCjt/CEu18Y4Sk85rsWhEFwOw=";
+    hash = "sha256-DrBOx++Rp/5s8sU07+/cuy2Je27i84WCY3/mljLfawk=";
   };
 
   pythonRelaxDeps = [
