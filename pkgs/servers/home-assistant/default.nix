@@ -382,7 +382,7 @@ python.pkgs.buildPythonApplication rec {
   src = fetchFromGitHub {
     owner = "home-assistant";
     repo = "core";
-    rev = "refs/tags/${version}";
+    tag = version;
     hash = "sha256-kLjfocyI+A0xJxM/v7Mx3Gxoi8ITmb/p6SCFWSBc/9U=";
   };
 
@@ -610,6 +610,7 @@ python.pkgs.buildPythonApplication rec {
 
   meta = with lib; {
     homepage = "https://home-assistant.io/";
+    changelog = "https://github.com/home-assistant/core/releases/tag/${src.tag}";
     description = "Open source home automation that puts local control and privacy first";
     license = licenses.asl20;
     maintainers = teams.home-assistant.members;
