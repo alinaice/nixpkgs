@@ -2024,13 +2024,14 @@
       ];
     "google_generative_ai_conversation" =
       ps: with ps; [
+        google-genai
         ha-ffmpeg
         hassil
         home-assistant-intents
         mutagen
         pymicro-vad
         pyspeex-noise
-      ]; # missing inputs: google-genai
+      ];
     "google_mail" =
       ps: with ps; [
         google-api-python-client
@@ -6847,6 +6848,7 @@
     "google_assistant_sdk"
     "google_cloud"
     "google_drive"
+    "google_generative_ai_conversation"
     "google_mail"
     "google_photos"
     "google_pubsub"
